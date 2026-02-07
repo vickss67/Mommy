@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Can I Court You?</title>
+
+<!-- Elegant Font -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-rows: 1fr auto 1fr;
+        place-items: center;
+        font-family: 'Great Vibes', cursive;
+        color: black;
+        text-align: center;
+    }
+
+    /* ===== BACKGROUND IMAGE ===== */
+    body {
+        background-image: url('penuts.jpeg');
+    }
+    
+
+    .title {
+        align-self: center;
+        margin: 0;
+        font-size: clamp(70px, 9vw, 140px);
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-shadow: 0 2px 10px rgba(255,255,255,0.35);
+    }
+
+    .ring-container {
+        align-self: center;
+        margin: 0;
+    }
+
+    .ring-container img {
+        width: clamp(180px, 28vw, 420px);
+        filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
+        transform: translateY(60px);
+        transition: transform 0.4s ease;
+    }
+
+    .ring-container img:hover {
+        transform: scale(1.1) rotate(5deg);
+    }
+</style>
+</head>
+<body>
+
+<!-- ===== MUSIC =====
+Replace music.mp3 with your music file -->
+<audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- TOP TEXT -->
+<div class="title">Can I court you?</div>
+
+<!-- BOTTOM RING IMAGE -->
+<div class="ring-container">
+    <!-- Replace ring.png with your ring image -->
+    <img src="ring.png" alt="Ring">
+</div>
+
+</body>
+</html>
+
